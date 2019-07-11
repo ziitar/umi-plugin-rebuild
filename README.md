@@ -1,7 +1,7 @@
-# umi-plugin-umi-plugin
+# umi-plugin-rebuild
 
-[![NPM version](https://img.shields.io/npm/v/umi-plugin-umi-plugin.svg?style=flat)](https://npmjs.org/package/umi-plugin-umi-plugin)
-[![NPM downloads](http://img.shields.io/npm/dm/umi-plugin-umi-plugin.svg?style=flat)](https://npmjs.org/package/umi-plugin-umi-plugin)
+[![NPM version](https://img.shields.io/npm/v/umi-plugin-umi-plugin.svg?style=flat)](https://npmjs.org/package/umi-plugin-rebuild)
+[![NPM downloads](http://img.shields.io/npm/dm/umi-plugin-umi-plugin.svg?style=flat)](https://npmjs.org/package/umi-plugin-rebuild)
 
 remove dist files to a new directory after build.
 
@@ -12,7 +12,7 @@ Configure in `.umirc.js`,
 ```js
 export default {
   plugins: [
-    ['umi-plugin-umi-plugin', options],
+    ['umi-plugin-rebuild', options],
   ],
 }
 ```
