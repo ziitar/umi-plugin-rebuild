@@ -62,12 +62,12 @@ function copyFile(arr, source, output) {
 }
 
 export default function (api, options) {
-  const {outputPath, onBuildSuccess} = api.paths;
+  const {outputPath } = api.paths;
   const {source, output} = Object.assign({
     source: 'dist',
     output: '_dist'
   }, options);
-  onBuildSuccess(() => {
+  api.onBuildSuccess(() => {
     const arr = deepReadDir(path.normalize(outputPath));
     if (fs.existsSync(output)) {
       copyFile(arr, source, output)
