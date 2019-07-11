@@ -1,0 +1,30 @@
+{
+  "name": "umi-plugin-rebuild",
+  "version": "0.0.1",
+  "description": "move dist files to a new directory after build",
+  "authors": {
+    "name": "ziitar",
+    "email": "ziitar@163.com"
+  },
+  "repository": "https://github.com/ziitar/umi-plugin-rebuild",
+  "peerDependencies": {
+    "umi": "2.x"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "umi-tools build",
+    "prepublishOnly": "npm run build && np --no-cleanup --yolo --no-publish"
+  },
+  "devDependencies": {
+    "np": "^3.0.4",
+    "umi-tools": "*"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "async": "^3.1.0"
+  }
+}
