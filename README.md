@@ -3,7 +3,7 @@
 [![NPM version](https://img.shields.io/npm/v/umi-plugin-rebuild.svg?style=flat)](https://www.npmjs.com/package/umi-plugin-rebuild)
 [![NPM downloads](http://img.shields.io/npm/dm/umi-plugin-rebuild.svg?style=flat)](https://www.npmjs.com/package/umi-plugin-rebuild)
 
-remove dist files to a new directory after build.
+move dist files to a new directory after build.
 
 ## Usage
 
@@ -21,8 +21,8 @@ export default {
 
 ```js
 {
-	source: 'dist',  //defualt 'dist' 待复制的目录名
-	output: '_dist'	 //defualt '_dist' 复制后的目录名
+  source: 'dist',  //defualt 'dist' 待复制的目录名
+  output: '_dist'  //defualt '_dist' 复制后的目录名
 }
 ```
 
